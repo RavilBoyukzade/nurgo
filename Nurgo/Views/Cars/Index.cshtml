@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Maşınlar";
+}
+<!-- Sub banner start -->
+<div class="sub-banner">
+    <div class="container breadcrumb-area">
+        <div class="breadcrumb-areas">
+            <h1>Maşınlar</h1>
+            <ul class="breadcrumbs">
+                <li><a asp-controller="Home" asp-action="index">Əsas</a></li>
+                <li class="active">Maşınlar</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Sub Banner end -->
+
+   <vc:product></vc:product>
+
+@section Scripts{
+
+            <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+            <script src="~/js/ie10-viewport-bug-workaround.js"></script>
+            <!-- Custom javascript -->
+            <script src="~/js/ie10-viewport-bug-workaround.js"></script>
+ }
+
+@section Head{
+                    <!-- Custom stylesheet -->
+                <link rel="stylesheet" type="text/css" href="~/css/initial.css" asp-append-version="true" />
+                <link rel="stylesheet" type="text/css" href="~/css/style.css" />
+                <link rel="stylesheet" type="text/css" id="style_sheet" href="~/css/skins/midnight-blue.css" />
+    <style>
+        .fit-image {
+            object-fit: cover !important;
+            height: 250px !important;
+            align-content: center;
+        }
+    </style>
+
+}

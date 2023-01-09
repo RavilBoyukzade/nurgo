@@ -1,0 +1,75 @@
+﻿@model SliderItemViewModel
+@{
+    ViewData["Title"] = "Yeni Slayder";
+}
+
+<!-- Begin Page Content -->
+<div class="container-fluid">
+
+    <!-- Page Heading -->
+    <h1 class="h3 mb-2 text-gray-800">Yeni Şöbə</h1>
+
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+        <div class="card-body">
+            <form method="post">
+                <div class="form-group">
+                    <label>Vəziyyəti</label>
+                    <div class="custom-control custom-radio custom-control-inline ml-3">
+                        @Html.RadioButtonFor(model => model.Status,"True") <span class="text-success">Activ</span>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        @Html.RadioButtonFor(model => model.Status,"False")<span class="text-warning">Passiv</span>
+                    </div>
+                   
+                </div>
+                <span class="text-danger">Statusu geyd etməyə unutma!</span>
+                <div class="form-group">
+                    <label asp-for="Image">Şəkil</label>
+                    <input class="form-control form-control-user slug-source" asp-for="Image">
+                    <span class="field-validation-valid" asp-validation-for="Image"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="OrderBy">Pozisiya (Yer)</label>
+                    <input class="form-control form-control-user slug-source" asp-for="OrderBy">
+                    <span class="field-validation-valid" asp-validation-for="OrderBy"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Title">Əsas mətn</label>
+                    <input class="form-control form-control-user slug-source" asp-for="Title">
+                    <span class="field-validation-valid" asp-validation-for="Title"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Slogan">Slogan</label>
+                    <input class="form-control form-control-user slug-source" asp-for="Slogan">
+                    <span class="field-validation-valid" asp-validation-for="Slogan"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ActionText">Düymə üzərində mətn</label>
+                    <input class="form-control form-control-user slug-source" asp-for="ActionText">
+                    <span class="field-validation-valid" asp-validation-for="ActionText"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="EndPoint">Düymənin keçid yeri</label>
+                    <input class="form-control form-control-user slug-source" asp-for="EndPoint">
+                    <span class="field-validation-valid" asp-validation-for="EndPoint"></span>
+                </div>
+                <div class="form-group d-flex justify-content-end mt-3">
+                    <button type="submit" class="btn btn-primary btn-icon-split">
+                        <span class="icon text-white-50">
+                            <i class="fas fa-plus"></i>
+                        </span>
+                        <span class="text">Əlavə et</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+<!-- /.container-fluid -->
+@section Scripts{
+    <script src="~/lib/jquery-validate/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+  
+}

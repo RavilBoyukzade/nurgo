@@ -1,0 +1,18 @@
+﻿@model ProductViewModel
+
+<div class="car-box-3">
+	<div class="car-thumbnail">
+		<a asp-controller="product" asp-action="index" asp-route-id="@Model.Id">
+			<img class="d-block w-100 fit-image" src="uploads/@Model.Photos[0]" alt="@Model.CarName" />
+		</a>
+		<div class="price-box-2 mt-2">
+			<sup>₼</sup>@Model.Price.ToString("#")
+		</div>
+		
+	</div>
+	<div class="detail">
+		<h1 class="title">
+			<a asp-controller="product" asp-action="index" asp-route-id="@Model.Id">@Model.CarName</a>
+		</h1>
+	</div>
+</div>

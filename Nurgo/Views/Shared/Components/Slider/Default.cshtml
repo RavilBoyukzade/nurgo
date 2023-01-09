@@ -1,0 +1,47 @@
+﻿@model IEnumerable<SliderItemViewModel>
+@{
+	int i = 0;
+}
+<!-- Banner start -->
+<div class="banner" id="banner">
+	<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+		<div class="carousel-inner banner-slider-inner">
+
+
+			@foreach (var slide in Model)
+			{
+				i++;
+				var active = i == 1 ? "active" : "";
+				<div class="carousel-item banner-max-height @active item-bg">
+					<img class="d-block w-100 h-100" src="~/uploads/@slide.Image" alt="banner" />
+					<div class="carousel-content banner-info-2 bi-2">
+						<h1>@slide.Title</h1>
+						<p>
+							@slide.Slogan
+						</p>
+						<a href="@slide.EndPoint" class="btn-6">@slide.ActionText</a>
+					</div>
+				</div>
+			}
+
+
+
+
+		</div>
+		<button class="carousel-control-prev"
+				type="button"
+				data-bs-target="#carouselExampleFade"
+				data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next"
+				type="button"
+				data-bs-target="#carouselExampleFade"
+				data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+		</button>
+	</div>
+</div>
+<!-- Banner end -->

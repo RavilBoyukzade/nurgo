@@ -1,0 +1,20 @@
+﻿@model IEnumerable<ProductViewModel>
+
+<!-- Featured car start -->
+<div class="featured-car content-area">
+	<div class="container">
+		<!-- Main title -->
+		
+		<div class="row">
+
+			@foreach (var item in Model)
+			{
+				<div class="col-lg-4 col-md-6">
+					<partial name="Carproduct/_Product" model="item" />
+				</div>
+			}
+
+		</div>
+	</div>
+</div>
+<!-- Featured car end -->

@@ -1,0 +1,31 @@
+﻿@model IEnumerable<LastAddedViewModel>
+
+
+<!-- Featured car start -->
+<div class="featured-car content-area">
+	<div class="container">
+		<!-- Main title -->
+		<div class="main-title">
+			<h1 class="mb-10">Ən Son Təkliflər</h1>
+			<div class="title-border">
+				<div class="title-border-inner"></div>
+				<div class="title-border-inner"></div>
+				<div class="title-border-inner"></div>
+				<div class="title-border-inner"></div>
+				<div class="title-border-inner"></div>
+			</div>
+		</div>
+		<div class="row">
+
+			@foreach (var item in Model)
+			{
+				<div class="col-lg-4 col-md-6">
+					<partial name="Carproduct/_SingleProduct" model="item" />
+				</div>
+			}
+
+		</div>
+		<a asp-controller="Cars" asp-action="index" class="btn-6" style="display:grid;">Butun siyahiya bax</a>
+	</div>
+</div>
+<!-- Featured car end -->

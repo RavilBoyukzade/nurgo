@@ -1,0 +1,41 @@
+﻿@{
+	ViewData["Title"] = "Əsas";
+
+}
+<!-- Sub banner start -->
+<div class="sub-banner">
+	<div class="container breadcrumb-area">
+		<div class="breadcrumb-areas">
+			<h1>Maşınlar</h1>
+			<ul class="breadcrumbs">
+				<li><a asp-controller="Home" asp-action="index">Əsas</a></li>
+				<li class="active">Maşınlar</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- Sub Banner end -->
+<center>
+	<h1 class="page-name" style="margin-top:25px">GÖMRÜK VERGİSİ KALKULYATORU </h1>
+</center>
+
+<center>
+	<iframe width="644px" height="876px" src="https://avtostop.az/calculator/customs/"
+			style="border: 0px double #dedede; margin: 0px 0 20px 0"></iframe>
+</center>
+@section Scripts{
+
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="~/js/ie10-viewport-bug-workaround.js"></script>
+	<!-- Custom javascript -->
+	<script src="~/js/ie10-viewport-bug-workaround.js"></script>
+
+ }
+
+@section Head{
+	<!-- Custom stylesheet -->
+	<link rel="stylesheet" type="text/css" href="~/css/initial.css" asp-append-version="true" />
+	<link rel="stylesheet" type="text/css" href="~/css/style.css" />
+	<link rel="stylesheet" type="text/css" id="style_sheet" href="~/css/skins/midnight-blue.css" />
+
+}

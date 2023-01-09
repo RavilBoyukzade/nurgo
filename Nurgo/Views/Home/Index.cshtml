@@ -1,0 +1,117 @@
+﻿@{
+	ViewData["Title"] = "Əsas";
+
+}
+
+<!-- Sidenav start -->
+<nav id="sidebar" class="nav-sidebar">
+	<!-- Close btn-->
+	<div id="dismiss">
+		<i class="fa fa-close"></i>
+	</div>
+	<div class="sidebar-inner">
+		<div class="sidebar-logo">
+			<img src="img/logos/black-logo.png" alt="sidebarlogo" />
+		</div>
+		<div class="sidebar-navigation">
+			<h3 class="heading">Səhifələr</h3>
+			<ul class="menu-list">
+				<li>
+					<a asp-controller="Home" asp-action="index" class="active pt0">Əsas</a>
+				</li>
+				<li>
+					<a asp-controller="Cars" asp-action="index">Maşınlar</a>
+				</li>
+				<li>
+					<a asp-controller="Calculate" asp-action="index">Kalkulyator </a>
+				</li>
+			</ul>
+		</div>
+		<div class="get-in-touch">
+			<h3 class="heading">Bizmlə Əlaqə</h3>
+			<div class="get-in-touch-box d-flex">
+				<i class="flaticon-phone"></i>
+				<div class="detail">
+					<a href="tel:+994555533444">+994(55)553-34-44</a>
+				</div>
+			</div>
+			<div class="get-in-touch-box d-flex">
+				<i class="flaticon-mail"></i>
+				<div class="detail">
+					<a href="#">info@themevessel.com</a>
+				</div>
+			</div>
+			<div class="get-in-touch-box d-flex mb-0">
+				<i class="flaticon-earth"></i>
+				<div class="detail">
+					<a href="#">info@themevessel.com</a>
+				</div>
+			</div>
+		</div>
+		<div class="get-social">
+			<h3 class="heading">Sosial şəbəkələr</h3>
+			<a href="https://www.facebook.com/profile.php?id=100088041122659&mibextid=ZbWKwL"
+			   class="facebook-bg">
+				<i class="fa fa-facebook"></i>
+			</a>
+			<a href="https://api.whatsapp.com/send?phone=994555533444"
+			   class="whatsapp-bg">
+				<i class="fa fa-whatsapp"></i>
+			</a>
+			<a href="https://instagram.com/nurgo.az?igshid=ZmRlMzRkMDU="
+			   class="instagram-bg">
+				<i class="fa fa-instagram"></i>
+			</a>
+		</div>
+	</div>
+</nav>
+<!-- Sidenav end -->
+
+<vc:slider></vc:slider>
+
+<!-- Search box 3 start -->
+<div class="search-box-3">
+	<div class="container">
+		<a href="https://www.avtodispetcher.ru/distance/" id="avtd-embed-link">аквак</a>
+		<script>var _avtdq = [["language", "en"], ["width", '100%']];</script>
+		<script src="https://www.avtodispetcher.ru/distance/export/frame.js" async="async"></script>
+		<script>_avtdq.push(['enable_fuel_calc', false]);</script>
+		<script>_avtdq.push(['enable_print_link', false]);</script>
+		<script>_avtdq.push(['enable_map', false]);</script>
+		<script>_avtdq.push(['enable_extra_settings', false]);</script>
+		<script>_avtdq.push(['default_to', 'Нюрнберг']);</script>
+	</div>
+</div>
+
+<vc:last-added></vc:last-added>
+
+<!-- Advantages 2 start -->
+<vc:advantage></vc:advantage>
+<!-- Advantages 2 end -->
+@section Scripts{
+
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="~/js/ie10-viewport-bug-workaround.js"></script>
+	<!-- Custom javascript -->
+	<script src="~/js/ie10-viewport-bug-workaround.js"></script>
+
+ }
+
+@section Head{
+	<!-- Custom stylesheet -->
+	<link rel="stylesheet" type="text/css" href="~/css/initial.css" asp-append-version="true" />
+	<link rel="stylesheet" type="text/css" href="~/css/style.css" />
+	<link rel="stylesheet" type="text/css" id="style_sheet" href="~/css/skins/midnight-blue.css" />
+	<style>
+	.fit-image {
+    object-fit: cover!important;
+    height: 250px!important;
+	align-content:center;
+	}
+
+		.car-box-3 .car-thumbnail {
+			box-shadow: 10px 5px 5px grey;
+		}
+	</style>
+
+}
