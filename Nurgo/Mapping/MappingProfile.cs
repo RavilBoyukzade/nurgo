@@ -23,7 +23,8 @@ namespace Nurgo.Mapping
 				.MapFrom(src => src.Videos.OrderBy(p => p.OrderBy)
 										.Select(p => p.Video)))
                 .ForMember(d => d.Futures, opt => opt
-                .MapFrom(src => src.Futures.Select(p => p.Future))); 
+                .MapFrom(src => src.Futures.Select(p => p.Future)));
+			CreateMap<Setting, SettingViewModel>();
 				
 		}
 	}

@@ -40,8 +40,15 @@ using Admin.Models.Addings;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 5 "C:\Users\ravil\Desktop\Project\Nurgo\Admin\Views\_ViewImports.cshtml"
+using Admin.Models.Product;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9c3504f80d710c82439b353af82daf4b555eb9c1", @"/Views/Slider/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"47b678ce0a43402eef54a95ca4b21d2f95421991", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"76943408224d9c9f04d7d798bacc7b2dc804fe93", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_Slider_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<SliderItemViewModel>>
     #nullable disable
@@ -94,7 +101,7 @@ using Admin.Models.Addings;
     <div class=""card shadow mb-4"">
         <div class=""card-header py-3"">
             ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9c3504f80d710c82439b353af82daf4b555eb9c15947", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9c3504f80d710c82439b353af82daf4b555eb9c16125", async() => {
                 WriteLiteral("Yeni söbə");
             }
             );
@@ -195,7 +202,7 @@ using Admin.Models.Addings;
 #line hidden
 #nullable disable
             WriteLiteral("</td>\r\n                                <td class=\"d-flex justify-content-center\">\r\n\r\n                                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9c3504f80d710c82439b353af82daf4b555eb9c110413", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9c3504f80d710c82439b353af82daf4b555eb9c110591", async() => {
                 WriteLiteral("\r\n                                        <i class=\"fas fa-pencil-alt\"></i>\r\n                                    ");
             }
             );
@@ -227,7 +234,7 @@ using Admin.Models.Addings;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n\r\n                                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9c3504f80d710c82439b353af82daf4b555eb9c112847", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9c3504f80d710c82439b353af82daf4b555eb9c113025", async() => {
                 WriteLiteral("\r\n                                        <i class=\"fas fa-trash\"></i>\r\n                                    ");
             }
             );

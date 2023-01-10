@@ -17,6 +17,16 @@ namespace Repository.Repository.ProductRepository
 			_context = context;
 		}
 
+		public IEnumerable<Product> GetAllProducts()
+		{
+			return _context.Products.Include("Photos")
+				                    .Include("Videos")
+									.Include("Futures")
+									.Where(p => p.Status)
+                                    .OrderByDescending(p => p.AddedDate)
+                                    .ToList();
+		}
+
 		public IEnumerable<Product> GetLastAddedProducts(int limit)
 		{
 			return _context.Products.Include("Photos")

@@ -153,3 +153,6 @@ C:\Users\ravil\Desktop\Project\Nurgo\Admin\obj\Debug\netcoreapp3.1\Razor\Views\S
 C:\Users\ravil\Desktop\Project\Nurgo\Admin\obj\Debug\netcoreapp3.1\Razor\Views\Advantage\Index.cshtml.g.cs
 C:\Users\ravil\Desktop\Project\Nurgo\Admin\obj\Debug\netcoreapp3.1\Razor\Views\Advantage\Create.cshtml.g.cs
 C:\Users\ravil\Desktop\Project\Nurgo\Admin\obj\Debug\netcoreapp3.1\Razor\Views\Advantage\Edit.cshtml.g.cs
+C:\Users\ravil\Desktop\Project\Nurgo\Admin\obj\Debug\netcoreapp3.1\Razor\Views\Products\Index.cshtml.g.cs
+C:\Users\ravil\Desktop\Project\Nurgo\Admin\obj\Debug\netcoreapp3.1\Razor\Views\Products\Create.cshtml.g.cs
+C:\Users\ravil\Desktop\Project\Nurgo\Admin\bin\Debug\netcoreapp3.1\CloudinaryDotNet.dll

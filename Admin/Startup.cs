@@ -13,6 +13,9 @@ using System.Threading.Tasks;
 using Repository.Repository.AdminRepository;
 using AutoMapper;
 using Repository.Repository.ContentRepository;
+using Repository.Repository.ProductRepository;
+using Repository.Services;
+using Admin.Libs;
 
 namespace Admin
 {
@@ -36,7 +39,10 @@ namespace Admin
                     x => x.MigrationsAssembly("Repository")));
 
             services.AddTransient<IAdminRepository, AdminRepository>();
-            services.AddTransient<IContentRepository, ContentRepository>();      
+            services.AddTransient<IContentRepository, ContentRepository>();
+            services.AddTransient<IProductRepository, ProductRepository>();
+            services.AddTransient<ICloudinaryService,CloudinaryService>();
+            services.AddTransient<IFileManager, FileManager>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

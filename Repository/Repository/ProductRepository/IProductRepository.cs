@@ -10,5 +10,6 @@ namespace Repository.Repository.ProductRepository
 		IEnumerable<Product> GetLastAddedProducts(int limit);
 		IEnumerable<Product> GetProducts();
 		Product GetProductById(int id);
+		IEnumerable<Product> GetAllProducts();
 	}
 }
