@@ -155,3 +155,4 @@ C:\Users\ravil\Desktop\Project\Nurgo\Nurgo\obj\Debug\netcoreapp3.1\Razor\Views\S
 C:\Users\ravil\Desktop\Project\Nurgo\Nurgo\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Product\Default.cshtml.g.cs
 C:\Users\ravil\Desktop\Project\Nurgo\Nurgo\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Carproduct\_Product.cshtml.g.cs
 C:\Users\ravil\Desktop\Project\Nurgo\Nurgo\bin\Debug\netcoreapp3.1\CryptoHelper.dll
+C:\Users\ravil\Desktop\Project\Nurgo\Nurgo\bin\Debug\netcoreapp3.1\CloudinaryDotNet.dll

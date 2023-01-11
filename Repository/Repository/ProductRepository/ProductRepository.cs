@@ -17,10 +17,17 @@ namespace Repository.Repository.ProductRepository
 			_context = context;
 		}
 
-		public IEnumerable<Product> GetAllProducts()
+        public Product CreateProduct(Product product)
+        {
+            product.AddedDate= DateTime.Now;
+			_context.Products.Add(product);
+			_context.SaveChanges();
+			return product;
+        }
+
+        public IEnumerable<Product> GetAllProducts()
 		{
 			return _context.Products.Include("Photos")
-				                    .Include("Videos")
 									.Include("Futures")
 									.Where(p => p.Status)
                                     .OrderByDescending(p => p.AddedDate)
@@ -39,7 +46,6 @@ namespace Repository.Repository.ProductRepository
         public Product GetProductById(int id)
         {
            return _context.Products.Include("Photos")
-								   .Include("Videos")
                                    .Include("Futures")
                                    .FirstOrDefault(p=>p.Status && p.Id == id);
         }

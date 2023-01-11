@@ -26,8 +26,15 @@ using Nurgo.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\ravil\Desktop\Project\Nurgo\Nurgo\Views\_ViewImports.cshtml"
+using Repository.Services;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ad199c7feecfa534bcb06375fae5b22c03d591e6", @"/Views/Home/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1abae8e3360c174a9993b0f0b90466d1f5f0a686", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"6ca59831d83d57fc4c6f21a509ee29de06580b12", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_Home_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     #nullable disable
@@ -85,7 +92,7 @@ using Nurgo.Models;
 #line hidden
 #nullable disable
             WriteLiteral("\r\n<!-- Sidenav start -->\r\n<nav id=\"sidebar\" class=\"nav-sidebar\">\r\n\t<!-- Close btn-->\r\n\t<div id=\"dismiss\">\r\n\t\t<i class=\"fa fa-close\"></i>\r\n\t</div>\r\n\t<div class=\"sidebar-inner\">\r\n\t\t<div class=\"sidebar-logo\">\r\n\t\t\t");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "ad199c7feecfa534bcb06375fae5b22c03d591e68899", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "ad199c7feecfa534bcb06375fae5b22c03d591e69076", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -100,7 +107,7 @@ using Nurgo.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n\t\t</div>\r\n\t\t<div class=\"sidebar-navigation\">\r\n\t\t\t<h3 class=\"heading\">Səhifələr</h3>\r\n\t\t\t<ul class=\"menu-list\">\r\n\t\t\t\t<li>\r\n\t\t\t\t\t");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ad199c7feecfa534bcb06375fae5b22c03d591e610174", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ad199c7feecfa534bcb06375fae5b22c03d591e610351", async() => {
                 WriteLiteral("Əsas");
             }
             );
@@ -119,7 +126,7 @@ using Nurgo.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n\t\t\t\t</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ad199c7feecfa534bcb06375fae5b22c03d591e611660", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ad199c7feecfa534bcb06375fae5b22c03d591e611837", async() => {
                 WriteLiteral("Maşınlar");
             }
             );
@@ -137,7 +144,7 @@ using Nurgo.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n\t\t\t\t</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ad199c7feecfa534bcb06375fae5b22c03d591e613067", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ad199c7feecfa534bcb06375fae5b22c03d591e613244", async() => {
                 WriteLiteral("Kalkulyator ");
             }
             );
@@ -191,7 +198,7 @@ using Nurgo.Models;
 			</a>
 			<a href=""h");
             WriteLiteral("ttps://instagram.com/nurgo.az?igshid=ZmRlMzRkMDU=\"\r\n\t\t\t   class=\"instagram-bg\">\r\n\t\t\t\t<i class=\"fa fa-instagram\"></i>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t</div>\r\n</nav>\r\n<!-- Sidenav end -->\r\n\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:slider", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ad199c7feecfa534bcb06375fae5b22c03d591e615746", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:slider", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ad199c7feecfa534bcb06375fae5b22c03d591e615923", async() => {
             }
             );
             __SliderViewComponentTagHelper = CreateTagHelper<global::AspNetCore.Views_Home_Index.__Generated__SliderViewComponentTagHelper>();
@@ -220,7 +227,7 @@ using Nurgo.Models;
 </div>
 
 ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:last-added", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ad199c7feecfa534bcb06375fae5b22c03d591e617323", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:last-added", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ad199c7feecfa534bcb06375fae5b22c03d591e617500", async() => {
             }
             );
             __LastAddedViewComponentTagHelper = CreateTagHelper<global::AspNetCore.Views_Home_Index.__Generated__LastAddedViewComponentTagHelper>();
@@ -233,7 +240,7 @@ using Nurgo.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n\r\n<!-- Advantages 2 start -->\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:advantage", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ad199c7feecfa534bcb06375fae5b22c03d591e618264", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:advantage", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ad199c7feecfa534bcb06375fae5b22c03d591e618441", async() => {
             }
             );
             __AdvantageViewComponentTagHelper = CreateTagHelper<global::AspNetCore.Views_Home_Index.__Generated__AdvantageViewComponentTagHelper>();
@@ -248,7 +255,7 @@ using Nurgo.Models;
             WriteLiteral("\r\n<!-- Advantages 2 end -->\r\n");
             DefineSection("Scripts", async() => {
                 WriteLiteral("\r\n\r\n\t<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->\r\n\t");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ad199c7feecfa534bcb06375fae5b22c03d591e619365", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ad199c7feecfa534bcb06375fae5b22c03d591e619542", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -262,7 +269,7 @@ using Nurgo.Models;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n\t<!-- Custom javascript -->\r\n\t");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ad199c7feecfa534bcb06375fae5b22c03d591e620495", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ad199c7feecfa534bcb06375fae5b22c03d591e620672", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -281,7 +288,7 @@ using Nurgo.Models;
             WriteLiteral("\r\n");
             DefineSection("Head", async() => {
                 WriteLiteral("\r\n\t<!-- Custom stylesheet -->\r\n\t");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "ad199c7feecfa534bcb06375fae5b22c03d591e621783", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "ad199c7feecfa534bcb06375fae5b22c03d591e621960", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -308,7 +315,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_LinkTagHelper.AppendVersion = true;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n\t");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "ad199c7feecfa534bcb06375fae5b22c03d591e623885", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "ad199c7feecfa534bcb06375fae5b22c03d591e624062", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -324,7 +331,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_LinkTagHelper.AppendVersion = true;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n\t");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "ad199c7feecfa534bcb06375fae5b22c03d591e625150", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "ad199c7feecfa534bcb06375fae5b22c03d591e625327", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

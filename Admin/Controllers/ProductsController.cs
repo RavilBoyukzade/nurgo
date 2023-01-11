@@ -44,6 +44,20 @@ namespace Admin.Controllers
 		}
 
 		[HttpPost]
+		[ValidateAntiForgeryToken]
+		public IActionResult Create(ProductViewModel prodmodel )
+		{
+			if (ModelState.IsValid)
+			{
+				var product = _mapper.Map<ProductViewModel, Product>(prodmodel);
+				product.AddedBy = _admin.Fullname;
+				_productRepository.CreateProduct(product);
+				return RedirectToAction("index");
+			}
+			return View(prodmodel);
+		}
+
+		[HttpPost]
 		public IActionResult Upload(IFormFile file)
 		{
 			var filename = _fileManager.Upload(file);
@@ -62,5 +76,9 @@ namespace Admin.Controllers
 			_cloudinaryService.Delete(name);
 			return Ok(new {status=200});
 		}
-	}
+        public IActionResult Edit()
+        {
+            return View();
+        }
+    }
 }

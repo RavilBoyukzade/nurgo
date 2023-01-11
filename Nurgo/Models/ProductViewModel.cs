@@ -24,7 +24,6 @@ namespace Nurgo.Models
         public string Engine { get; set; }
         public string FuelType { get; set; }
         public IList<string> Photos { get; set; }
-		public IList<string> Videos { get; set; }
         public IList<string> Futures { get; set; }
     }
 }

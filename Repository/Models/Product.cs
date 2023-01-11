@@ -32,8 +32,6 @@ namespace Repository.Models
         public string Engine { get; set; }
         public string FuelType { get; set; }
         public ICollection<ProductPhoto> Photos { get; set; }
-		public ICollection<ProductVideo> Videos { get; set; }
 		public ICollection<ProductFuture> Futures { get; set; }
-        public ICollection<ProductSpec> ProductSpecs { get; set; }
     }
 }

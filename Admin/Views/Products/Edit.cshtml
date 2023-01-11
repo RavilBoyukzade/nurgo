@@ -1,0 +1,232 @@
+﻿@model ProductViewModel
+@{
+    ViewData["Title"] = "Avtonəqliyyatı yenilə";
+}
+
+<!-- Begin Page Content -->
+<div class="container-fluid">
+
+    <!-- Page Heading -->
+    <h1 class="h3 mb-2 text-gray-800">Avtonəqliyyatı yenilə</h1>
+
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+        <div class="card-body">
+            <form method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label>Vəziyyəti</label>
+                    <div class="custom-control custom-radio custom-control-inline ml-3">
+                        @Html.RadioButtonFor(model => model.Status,"True") <span class="text-success">Activ</span>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        @Html.RadioButtonFor(model => model.Status,"False")<span class="text-warning">Passiv</span>
+                    </div>
+
+                </div>
+                <span class="text-danger">Statusu geyd etməyə unutma!</span>
+                <div class="form-group">
+                    <label asp-for="CarName">Avtonəqliyyatın adı</label>
+                    <input class="form-control form-control-user " asp-for="CarName">
+                    <span class="field-validation-valid" asp-validation-for="CarName"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Title">Başlıq</label>
+                    <input class="form-control form-control-user " asp-for="Title">
+                    <span class="field-validation-valid" asp-validation-for="Title"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Description">Avto haqqında məlumat</label>
+                    <textarea class="form-control form-control-user" asp-for="Description"></textarea>
+                    <span class="field-validation-valid" asp-validation-for="Description"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Price">Qiyməti</label>
+                    <input class="form-control form-control-user " asp-for="Price">
+                    <span class="field-validation-valid" asp-validation-for="Price"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Marka">Avtonəqliyyatın Markası</label>
+                    <input class="form-control form-control-user " asp-for="Marka">
+                    <span class="field-validation-valid" asp-validation-for="Marka"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Model">Avtonəqliyyatın Modeli</label>
+                    <input class="form-control form-control-user " asp-for="Model">
+                    <span class="field-validation-valid" asp-validation-for="Model"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="BodyStyle">Avtonəqliyyatın banı (sedan, suv, ...)</label>
+                    <input class="form-control form-control-user " asp-for="BodyStyle">
+                    <span class="field-validation-valid" asp-validation-for="BodyStyle"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Year">Avtonəqliyyatın Buraxılış ili</label>
+                    <input class="form-control form-control-user " asp-for="Year">
+                    <span class="field-validation-valid" asp-validation-for="Year"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Condition">Vəziyyət (yeni,sürülmüş)</label>
+                    <input class="form-control form-control-user" asp-for="Condition" />
+                    <span class="field-validation-valid" asp-validation-for="Condition"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Killometer">Yürüşü</label>
+                    <input class="form-control form-control-user" asp-for="Killometer" />
+                    <span class="field-validation-valid" asp-validation-for="Killometer"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="İnteryer">İnteryer (parça, dəri, ...)</label>
+                    <input class="form-control form-control-user" asp-for="İnteryer" />
+                    <span class="field-validation-valid" asp-validation-for="İnteryer"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Transmissiya">Transmissiya(avtomat,mexanika,...)</label>
+                    <input class="form-control form-control-user" asp-for="Transmissiya" />
+                    <span class="field-validation-valid" asp-validation-for="Transmissiya"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Engine">Mühərrik</label>
+                    <input class="form-control form-control-user" asp-for="Engine" />
+                    <span class="field-validation-valid" asp-validation-for="Engine"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="FuelType">Yanacaq növü</label>
+                    <input class="form-control form-control-user" asp-for="FuelType" />
+                    <span class="field-validation-valid" asp-validation-for="FuelType"></span>
+                </div>
+                <!--   <div class="form-group">
+                       <label asp-for="Futures">Avtomobilin Təchizatı</label>
+                       <input class="form-control form-control-user" type="text" name="tags" data-role="tagsinput" asp-for="Futures" />
+                       <span class="field-validation-valid" asp-validation-for="Futures"></span>
+                      </div>-->
+                <div class="form-group gallery">
+                    <label for="files" type="button" id="uploader" class="btn btn-secondary">Şəkillər yüklə</label>
+                    <input type="file" name="files" id="files" multiple="" class="d-none" accept="image/*">
+                    <div class="photos"></div>
+                </div>
+                <div class="form-group d-flex justify-content-end mt-3">
+                    <button type="submit" class="btn btn-primary btn-icon-split">
+                        <span class="icon text-white-50">
+                            <i class="fas fa-pencil"></i>
+                        </span>
+                        <span class="text">Yenilə</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+<!-- /.container-fluid -->
+@section Scripts{
+    <script src="~/lib/jquery-validate/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/lib/bootstrap-tagsinput/bootstrap-tagsinput-angular.min.js"></script>
+    <script src="~/lib/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            if ($("input[name='files']").length) {
+                $("input[name='files']").change(function () {
+                    for (var i = 0; i < this.files.length; i++) {
+                        var formData = new FormData();
+                        formData.append('file', this.files[i]);
+                        $.ajax({
+                            url: '/products/upload',
+                            type: 'POST',
+                            data: formData,
+                            processData: false,
+                            contentType: false,
+                            dataType: "json",
+                            success: function (response) {
+                                let index = $(".photos .item").length;
+                                $(".photos").append(`<div class="item">
+                                                        <input type="hidden" value="${(index + 1)}" name="Photos[${index}].OrderBy" />
+                                                        <input type="hidden" value="${response.filename}" name="Photos[${index}].Image" />
+                                                        <img src="${response.src}" />
+                                                        <a href="#" data-name="${response.filename}" class="remove"><i class="fa fa-trash"></i></a>
+                                                    </div>`);
+                            }
+                        });
+                    }
+                });
+                $(document).on("click", ".photos .remove", function (ev) {
+                    ev.preventDefault();
+                    let elem = $(this).parents(".item");
+                    $.ajax({
+                        url: '/products/remove',
+                        data: {
+                            name: $(this).data("name")
+                        },
+                        type: "post",
+                        dataType: "json",
+                        success: function (response) {
+                            elem.remove();
+                        }
+                    });
+                });
+            }
+
+        });
+
+    </script>
+
+}
+@section Head{
+
+    <link rel="stylesheet" href="~/lib/bootstrap-tagsinput/bootstrap-tagsinput.css" />
+
+    <style>
+        .label-info {
+            background: #0275d8;
+            border-radius: 5px;
+            padding: 3px;
+            font-size: 11px;
+        }
+
+            .label-info span {
+                background: #d9534f;
+                border-radius: 63%;
+                text-align: center;
+                align-items: center;
+                font-size: 10px;
+                padding: 1px;
+            }
+
+        .gallery #uploader {
+            cursor: pointer
+        }
+
+        .gallery .photos {
+            margin-top: 25px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+            .gallery .photos .item {
+                width: 25%;
+                position: relative;
+                margin-bottom: 20px;
+                padding: 10px;
+            }
+
+                .gallery .photos .item img {
+                    max-width: 100%;
+                }
+
+                .gallery .photos .item .remove {
+                    position: absolute;
+                    top: 15px;
+                    right: 15px;
+                    color: white;
+                    width: 25px;
+                    height: 25px;
+                    line-height: 25px;
+                    text-align: center;
+                    background: #e74a3b;
+                    border-radius: 50%;
+                    font-size: 12px;
+                }
+    </style>
+
+}

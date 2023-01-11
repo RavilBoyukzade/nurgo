@@ -8,6 +8,7 @@ using Microsoft.Extensions.Hosting;
 using Repository.Data;
 using Repository.Repository.ContentRepository;
 using Repository.Repository.ProductRepository;
+using Repository.Services;
 
 namespace Nurgo
 {
@@ -33,8 +34,9 @@ namespace Nurgo
 
 			services.AddTransient<IContentRepository, ContentRepository>();
 			services.AddTransient<IProductRepository,ProductRepository>();
+            services.AddTransient<ICloudinaryService, CloudinaryService>();
 
-		}
+        }
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
 		public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

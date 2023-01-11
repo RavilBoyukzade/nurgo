@@ -26,8 +26,15 @@ using Nurgo.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\ravil\Desktop\Project\Nurgo\Nurgo\Views\_ViewImports.cshtml"
+using Repository.Services;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8739de07cd6848bc16355b406b1586451e491ffb", @"/Views/Shared/Components/LastAdded/Default.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1abae8e3360c174a9993b0f0b90466d1f5f0a686", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"6ca59831d83d57fc4c6f21a509ee29de06580b12", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_Shared_Components_LastAdded_Default : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<LastAddedViewModel>>
     #nullable disable
@@ -90,7 +97,7 @@ using Nurgo.Models;
 #line hidden
 #nullable disable
             WriteLiteral("\t\t\t\t<div class=\"col-lg-4 col-md-6\">\r\n\t\t\t\t\t");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "8739de07cd6848bc16355b406b1586451e491ffb5778", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "8739de07cd6848bc16355b406b1586451e491ffb5955", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();
@@ -121,7 +128,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper.Model = item;
 #line hidden
 #nullable disable
             WriteLiteral("\r\n\t\t</div>\r\n\t\t");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8739de07cd6848bc16355b406b1586451e491ffb7606", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8739de07cd6848bc16355b406b1586451e491ffb7783", async() => {
                 WriteLiteral("Butun siyahiya bax");
             }
             );

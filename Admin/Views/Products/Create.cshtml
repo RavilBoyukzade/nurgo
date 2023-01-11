@@ -36,7 +36,7 @@
                 </div>
                 <div class="form-group">
                     <label asp-for="Description">Avto haqqında məlumat</label>
-                    <input class="form-control form-control-user " asp-for="Description">
+                    <textarea class="form-control form-control-user" asp-for="Description"></textarea>
                     <span class="field-validation-valid" asp-validation-for="Description"></span>
                 </div>
                 <div class="form-group">
@@ -94,6 +94,11 @@
                     <input class="form-control form-control-user" asp-for="FuelType" />
                     <span class="field-validation-valid" asp-validation-for="FuelType"></span>
                 </div>
+             <!--   <div class="form-group">
+                    <label asp-for="Futures">Avtomobilin Təchizatı</label>
+                    <input class="form-control form-control-user" type="text" name="tags" data-role="tagsinput" asp-for="Futures" />
+                    <span class="field-validation-valid" asp-validation-for="Futures"></span>
+                   </div>-->
                 <div class="form-group gallery">
                     <label for="files" type="button" id="uploader" class="btn btn-secondary">Şəkillər yüklə</label>
                     <input type="file" name="files" id="files" multiple="" class="d-none" accept="image/*">
@@ -116,6 +121,9 @@
 @section Scripts{
     <script src="~/lib/jquery-validate/jquery.validate.min.js"></script>
     <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/lib/bootstrap-tagsinput/bootstrap-tagsinput-angular.min.js"></script>
+    <script src="~/lib/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
+
 <script>
         $(document).ready(function () {
             if ($("input[name='files']").length) {
@@ -158,20 +166,32 @@
                     });
                 });
             }
-            $("#DepartmentId").change(function () {
-                $("#CategoryId").html(` <option value="0" selected disabled>Seçin</option>`);
-                $.getJSON("/products/categories/" + $(this).val(), function (res) {
-                    res.forEach(item => {
-                        $("#CategoryId").append(`<option value="${item.id}">${item.name}</option>`)
-                    });
-                });
-            });
+           
         });
+
     </script>
 
 }
 @section Head{
+
+    <link rel="stylesheet" href="~/lib/bootstrap-tagsinput/bootstrap-tagsinput.css" />
+
     <style>
+        .label-info {
+            background: #0275d8;
+            border-radius: 5px;
+            padding: 3px;
+            font-size: 11px;
+        }
+
+        .label-info span {
+                background: #d9534f;
+                border-radius: 63%;
+                text-align: center;
+                align-items: center;
+                font-size: 10px;
+                padding: 1px;
+        }
         .gallery #uploader {
             cursor: pointer
         }
@@ -207,4 +227,5 @@
                     font-size: 12px;
                 }
     </style>
+   
 }

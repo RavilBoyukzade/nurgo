@@ -11,5 +11,6 @@ namespace Repository.Repository.ProductRepository
 		IEnumerable<Product> GetProducts();
 		Product GetProductById(int id);
 		IEnumerable<Product> GetAllProducts();
-	}
+        Product CreateProduct(Product product);
+    }
 }

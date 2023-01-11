@@ -47,8 +47,15 @@ using Admin.Models.Product;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 6 "C:\Users\ravil\Desktop\Project\Nurgo\Admin\Views\_ViewImports.cshtml"
+using Repository.Services;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"181245ee07e0a5c8c6ce92ac8b5521a39b3afee4", @"/Views/Advantage/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"76943408224d9c9f04d7d798bacc7b2dc804fe93", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"93e60ebd3e4b2c2e86ae272b279d3ef4fae1fa43", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_Advantage_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<AdvantageViewModel>>
     #nullable disable
@@ -101,7 +108,7 @@ using Admin.Models.Product;
     <div class=""card shadow mb-4"">
         <div class=""card-header py-3"">
             ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "181245ee07e0a5c8c6ce92ac8b5521a39b3afee46158", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "181245ee07e0a5c8c6ce92ac8b5521a39b3afee46335", async() => {
                 WriteLiteral("Yeni üstünlük əlavə et");
             }
             );
@@ -192,7 +199,7 @@ using Admin.Models.Product;
 #line hidden
 #nullable disable
             WriteLiteral("</td>\r\n                                <td class=\"d-flex justify-content-center\">\r\n\r\n                                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "181245ee07e0a5c8c6ce92ac8b5521a39b3afee410291", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "181245ee07e0a5c8c6ce92ac8b5521a39b3afee410468", async() => {
                 WriteLiteral("\r\n                                        <i class=\"fas fa-pencil-alt\"></i>\r\n                                    ");
             }
             );
@@ -224,7 +231,7 @@ using Admin.Models.Product;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n\r\n                                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "181245ee07e0a5c8c6ce92ac8b5521a39b3afee412728", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "181245ee07e0a5c8c6ce92ac8b5521a39b3afee412905", async() => {
                 WriteLiteral("\r\n                                        <i class=\"fas fa-trash\"></i>\r\n                                    ");
             }
             );

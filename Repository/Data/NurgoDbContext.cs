@@ -14,7 +14,6 @@ namespace Repository.Data
 		public DbSet<Advantage> Advantages { get; set; }
 		public DbSet<Product> Products { get; set; }
 		public DbSet<ProductPhoto> ProductPhotos { get; set; }
-		public DbSet<ProductVideo> ProductVideos { get; set; }
 		public DbSet<Setting> Settings { get; set; }
 		public DbSet<SliderItem> SliderItems { get; set; }
 		public DbSet<ProductFuture> ProductFutures { get; set; }

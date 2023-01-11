@@ -52,6 +52,10 @@
     {
       "library": "dropzone@5.9.3",
       "destination": "wwwroot/lib/dropzone/"
+    },
+    {
+      "library": "bootstrap-tagsinput@0.8.0",
+      "destination": "wwwroot/lib/bootstrap-tagsinput/"
     }
   ]
 }

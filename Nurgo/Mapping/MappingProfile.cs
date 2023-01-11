@@ -19,9 +19,6 @@ namespace Nurgo.Mapping
 				.ForMember(d => d.Photos, opt => opt
 				.MapFrom(src => src.Photos.OrderBy(p => p.OrderBy)
 										.Select(p => p.Image)))
-				.ForMember(d => d.Videos, opt => opt
-				.MapFrom(src => src.Videos.OrderBy(p => p.OrderBy)
-										.Select(p => p.Video)))
                 .ForMember(d => d.Futures, opt => opt
                 .MapFrom(src => src.Futures.Select(p => p.Future)));
 			CreateMap<Setting, SettingViewModel>();

@@ -16,9 +16,11 @@ namespace Nurgo.Mapping
 			CreateMap<Advantage, AdvantageViewModel>();
             CreateMap<AdvantageViewModel, Advantage>();
 			CreateMap<Product, ProductViewModel>();
-			CreateMap<ProductPhoto, ProductPhotoViiewModel>();
-			CreateMap<ProductVideo, ProductVideoViewModel>();
+            CreateMap<ProductViewModel, Product>();
+            CreateMap<ProductPhoto, ProductPhotoViiewModel>();
+            CreateMap<ProductPhotoViiewModel, ProductPhoto>();
 			CreateMap<ProductFuture, ProductFutureViewModel>();
+            CreateMap<ProductFutureViewModel, ProductFuture>();
 
 
         }

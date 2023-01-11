@@ -1,4 +1,5 @@
 ﻿@model ProductViewModel
+@inject ICloudinaryService _cloudinaryService
 @{
     ViewData["Title"] = Model.CarName;
 }
@@ -24,13 +25,13 @@
                     <div class="cardetailsslider-3 clearfix mb-30">
                         <div class="product-img-slide">
                             <div class="slider-for">
-                                @foreach(var item in Model.Photos){
-                                    <img src="~/uploads/@item" class="img-fluid w-100" alt="@Model.CarName">
+                                @foreach(var item in Model.Photos ){
+                                    <img src="@_cloudinaryService.BuildUrl(item)" class="img-fluid w-100" alt="@Model.CarName">
                                 }
                             </div>
                             <div class="slider-nav">
                                 @foreach(var item in Model.Photos){
-                                    <div class="thumb-slide"><img src="~/uploads/@item" class="img-fluid" alt="@Model.CarName"></div>
+                                    <div class="thumb-slide"><img src="@_cloudinaryService.BuildUrl(item)" class="img-fluid" alt="@Model.CarName"></div>
                                 }
                                
                                 
@@ -159,18 +160,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Inside car start -->
-                    @if(Model.Videos == null)
-                    {
-                        <div class="inside-car mb-50">
-                            <h3 class="heading-2">Video</h3>
-                            @foreach (var item in Model.Videos)
-                            {
-                                <iframe src="~/videos/@item" allowfullscreen=""></iframe>
-                            }
-
-                        </div>
-                    }
+                   
                     
                     <!-- location start -->
                 </div>
