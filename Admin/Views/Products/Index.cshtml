@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<ProductViewModel>
 @inject ICloudinaryService _cloudinaryService
 @{
-    ViewData["Title"] = "Şöbələr";
+    ViewData["Title"] = "Maşınlar";
 }
 <!-- Begin Page Content -->
 <div class="container-fluid">
@@ -50,7 +50,7 @@
                                     }
                                 </td>
                                 <td>@item.CarName</td>
-                                <td>@item.Price.ToString("#")</td>
+                                <td>@item.Price.ToString("#")  ₼</td>
                                 <td>
                                     <img width="100" src="@_cloudinaryService.BuildUrl(item.Photos[0].Image)" />
                                 </td> 

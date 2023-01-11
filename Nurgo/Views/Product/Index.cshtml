@@ -16,7 +16,7 @@
                             <h3>@Model.CarName</h3>
                         </div>
                         <div class="pull-right">
-                            <h3>$@Model.Price.ToString("#")</h3>
+                            <h3> ₼@Model.Price.ToString("#")</h3>
                             <div class="clearfix"></div>
                             
                         </div>
@@ -79,88 +79,7 @@
                         <h3 class="heading-2">Təsvir</h3>
                         <p>@Model.Description</p>
                         </div>
-                    <!-- Car amenities start 
-                    <div class="car-amenities mb-40">
-                        <h3 class="heading-2">Spesifikasiyalar</h3>
-                        <div class="row">
-                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                <ul class="amenities">
-                                    <li>
-                                        <i class="fa fa-check"></i>Top Speed: 270
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-check"></i>Fuel Type: Diesel
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-check"></i>Mileage: 35,200 KM
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-check"></i>Engine: 2901
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-check"></i>Gear: 4
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                <ul class="amenities">
-                                    <li>
-                                        <i class="fa fa-check"></i>Drive Train: Front Wheel
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-check"></i>Body Style: Sedan
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-check"></i>Year:2019
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-check"></i>Fuel Type: Diesel
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-check"></i>Interior Color: White
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                <ul class="amenities">
-                                    <li>
-                                        <i class="fa fa-check"></i>Doors: 4
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-check"></i>Horse Power: 310
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-check"></i>Location: Florisa, USA
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-check"></i>Interior Color: Black
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-check"></i>Security
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>-->
-                    <!-- Features info start -->
-                    <div class="features-info mb-40">
-                        <h3 class="heading-2">Xüsusiyyətləri</h3>
-                        <div class="row">
-                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                <ul>
-                                    @foreach(var item in Model.Futures)
-                                    {
-                                        <li>
-                                            @item
-                                        </li>
-                                    }
-                                   
-                                   
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                   
+                            
                     
                     <!-- location start -->
                 </div>

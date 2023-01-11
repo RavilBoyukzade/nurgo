@@ -11,6 +11,11 @@ namespace Repository.Repository.ProductRepository
 		IEnumerable<Product> GetProducts();
 		Product GetProductById(int id);
 		IEnumerable<Product> GetAllProducts();
+        IEnumerable<Product> GetProductsWithStatus();
         Product CreateProduct(Product product);
+        Product GetProductsById(int id);
+        void RemovePhotosById(int id);
+        void AddPhoto(ProductPhoto productPhoto);
+        void UpdateProduct(Product productToUpdate, Product product);
     }
 }
