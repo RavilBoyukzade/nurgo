@@ -8,66 +8,77 @@ using System.Text;
 
 namespace Repository.Repository.ProductRepository
 {
-	public class ProductRepository : IProductRepository
-	{
-		private readonly NurgoDbContext _context;
+    public class ProductRepository : IProductRepository
+    {
+        private readonly NurgoDbContext _context;
 
-		public ProductRepository(NurgoDbContext context)
-		{
-			_context = context;
-		}
+        public ProductRepository(NurgoDbContext context)
+        {
+            _context = context;
+        }
 
         public void AddPhoto(ProductPhoto productPhoto)
         {
-           _context.ProductPhotos.Add(productPhoto);
-			_context.SaveChanges();
+            _context.ProductPhotos.Add(productPhoto);
+            _context.SaveChanges();
         }
 
         public Product CreateProduct(Product product)
         {
-            product.AddedDate= DateTime.Now;
-			_context.Products.Add(product);
-			_context.SaveChanges();
-			return product;
+            product.AddedDate = DateTime.Now;
+            _context.Products.Add(product);
+            _context.SaveChanges();
+            return product;
+        }
+
+        public void DeleteProduct(Product product)
+        {
+            _context.Products.Remove(product);
+            _context.SaveChanges();
         }
 
         public IEnumerable<Product> GetAllProducts()
-		{
-			return _context.Products.Include("Photos")
-									.Include("Futures")
-									.Where(p => p.Status)
+        {
+            return _context.Products.Include("Photos")
+                                    .Include("Futures")
+                                    .Where(p => p.Status)
                                     .OrderByDescending(p => p.AddedDate)
                                     .ToList();
-		}
+        }
 
-		public IEnumerable<Product> GetLastAddedProducts(int limit)
-		{
-			return _context.Products.Include("Photos")
-									.Where(p=>p.Status)
-									.OrderByDescending(p=>p.AddedDate)
-									.Take(limit)
-									.ToList();
-		}
+        public IEnumerable<Product> GetLastAddedProducts(int limit)
+        {
+            return _context.Products.Include("Photos")
+                                    .Where(p => p.Status)
+                                    .OrderByDescending(p => p.AddedDate)
+                                    .Take(limit)
+                                    .ToList();
+        }
 
         public Product GetProductById(int id)
         {
-           return _context.Products.Include("Photos")
-                                   .Include("Futures")
-                                   .FirstOrDefault(p=>p.Status && p.Id == id);
+            return _context.Products.Include("Photos")
+                                    .Include("Futures")
+                                    .FirstOrDefault(p => p.Status && p.Id == id);
+        }
+
+        public Product GetProductId(int id)
+        {
+            return _context.Products.Find(id);
         }
 
         public IEnumerable<Product> GetProducts()
-		{
-			return _context.Products.Include("Photos")
-									.Where(p=>p.Status)
-									.OrderByDescending(p=>p.AddedDate)
-									.ToList();
-		}
+        {
+            return _context.Products.Include("Photos")
+                                    .Where(p => p.Status)
+                                    .OrderByDescending(p => p.AddedDate)
+                                    .ToList();
+        }
 
         public Product GetProductsById(int id)
         {
             return _context.Products.Include("Photos")
-									.FirstOrDefault(p=>p.Status && p.Id == id);
+                                    .FirstOrDefault(p => p.Status && p.Id == id);
         }
 
         public IEnumerable<Product> GetProductsWithStatus()

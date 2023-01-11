@@ -125,5 +125,13 @@ namespace Admin.Controllers
 
             return View(model);
         }
-    }
+		public IActionResult Delete(int id)
+		{
+			Product product = _productRepository.GetProductId(id);
+			if (product == null) return NotFound();
+			_productRepository.DeleteProduct(product);
+
+			return RedirectToAction("index");
+		}
+	}
 }

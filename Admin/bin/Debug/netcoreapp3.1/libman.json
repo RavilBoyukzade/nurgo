@@ -56,6 +56,10 @@
     {
       "library": "bootstrap-tagsinput@0.8.0",
       "destination": "wwwroot/lib/bootstrap-tagsinput/"
+    },
+    {
+      "library": "bootstrap@5.2.3",
+      "destination": "wwwroot/lib/bootstrap/"
     }
   ]
 }

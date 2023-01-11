@@ -17,5 +17,7 @@ namespace Repository.Repository.ProductRepository
         void RemovePhotosById(int id);
         void AddPhoto(ProductPhoto productPhoto);
         void UpdateProduct(Product productToUpdate, Product product);
-    }
+		void DeleteProduct(Product product);
+		Product GetProductId(int id);
+	}
 }
